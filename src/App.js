@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Home from "./components/Home";
 import BookDetails from "./components/BookDetails";
-import { BrowserRouter, Link, Route } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
 const App = () => {
     return (

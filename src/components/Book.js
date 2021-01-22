@@ -1,6 +1,5 @@
 import React from "react";
-import { unstable_renderSubtreeIntoContainer } from "react-dom";
-import { BrowserRouter, Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Book = (props) => {
     //console.log(props.data);
@@ -19,10 +18,13 @@ const Book = (props) => {
                         <div class="card-image">
                             {props.data.volumeInfo.imageLinks == null ? (
                                 <img src="https://picsum.photos/200/300"
+                                    alt = "book-image"
                                     style={{ height: 350, width: 300 }}
                                 />
                             ) : (
-                                    <img src={props.data.volumeInfo.imageLinks.thumbnail} style={{ height: 350, width: 300 }} />
+                                    <img src={props.data.volumeInfo.imageLinks.thumbnail} 
+                                        alt = "book-image"
+                                        style={{ height: 350, width: 300 }} />
 
                                 )
                             }

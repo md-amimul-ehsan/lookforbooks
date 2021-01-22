@@ -15,9 +15,12 @@ const BookDetails = (props) => {
                                 <div className="card-image">
                                     {props.location.state.thumbnail == null ? 
                                     <img src="https://picsum.photos/200/300"
+                                        alt = "book-image"
                                         style={{ height: 300, width: 200 }}
                                     /> :
-                                        <img src={props.location.state.thumbnail} style={{ height: 300, width: 200 }} />
+                                        <img src={props.location.state.thumbnail} 
+                                            alt = "book-image"
+                                            style={{ height: 300, width: 200 }} />
                                     }
 
                                 </div>
